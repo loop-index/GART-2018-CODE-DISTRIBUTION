@@ -15,6 +15,21 @@ public class CG_Right_Left extends CommandGroup {
 
 	public CG_Right_Left () { //đi vượt qua switch, quay trái, đi vượt qua switch, 
 							  //quay trái, đi một đoạn, quay trái, bắn
+		
+				/*
+		 * |                                       |
+		 * |   <------------------------------^    |
+		 * |   |    ---------------------     |    |
+		 * |   |    |     |       |     |     |    |
+		 * |   v--->|     |       |     |     |    |
+		 * |        ---------------------     |    |
+		 * |                                  |    |
+		 * |                                  |    |
+		 * |                                 ---   |
+		 * |                                 | |   |
+		 * |                                 ---   |
+		 * -----------------------------------------
+		 */
 
 	addSequential(new C_AutoTillPass_Left());
 	addSequential(new C_AutoTurn(-90));
