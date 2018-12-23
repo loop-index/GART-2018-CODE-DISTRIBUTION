@@ -19,6 +19,21 @@ public class CG_Left_Left extends CommandGroup {
 	public CG_Left_Left () { //đi ngang cán cân, quay phải, bắn
 							 //viết vào constructor để những lệnh này được gọi ngay khi CommandGroup được tạo
 
+		/*
+	 * |                                       |
+	 * |                                       |
+	 * |        ---------------------          |
+	 * |        |     |       |     |          |
+	 * |   ^ -->|     |       |     |          |
+	 * |   |    ---------------------          |
+	 * |   |                                   |
+	 * |   |                                   |
+	 * |  ---                                  |
+	 * |  | |                                  |
+	 * |  ---                                  |
+	 * -----------------------------------------
+	 */
+		
 	addSequential(new C_DriveByPosition(2.79, 1.16, 0, 1, 'R')); //thêm Command theo thứ tự
 	addSequential(new C_AutoTurn(90));
 	addSequential(new C_AutoShoot());
