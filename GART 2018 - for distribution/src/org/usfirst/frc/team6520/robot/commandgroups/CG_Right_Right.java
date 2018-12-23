@@ -16,6 +16,21 @@ import edu.wpi.first.wpilibj.command.CommandGroup;
 public class CG_Right_Right extends CommandGroup {
 
 	public CG_Right_Right () { //đi ngang switch, quay trái, bắn
+		
+				/*
+	 * |                                       |
+	 * |                                       |
+	 * |        ---------------------          |
+	 * |        |     |       |     |          |
+	 * |        |     |       |     | <-----^  |
+	 * |        ---------------------       |  |
+	 * |                                    |  |
+	 * |                                    |  |
+	 * |                                   --- |
+	 * |                                   | | |
+	 * |                                   --- |
+	 * -----------------------------------------
+	 */
 
 	addSequential(new C_DriveByPosition(2.79, 1.16, 0, 1, 'L'));
 	addSequential(new C_AutoTurn(-90));
