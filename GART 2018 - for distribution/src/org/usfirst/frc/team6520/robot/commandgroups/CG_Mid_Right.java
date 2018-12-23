@@ -14,6 +14,21 @@ import edu.wpi.first.wpilibj.command.CommandGroup;
 public class CG_Mid_Right extends CommandGroup {
 
     public CG_Mid_Right() { //đi thẳng, quay phải, đi một đoạn, quay trái, đi một đoạn, bắn
+        
+        /*
+    	 * |                                       |
+    	 * |                                       |
+    	 * |        ---------------------          |
+    	 * |        |     |       |     |          |
+    	 * |        |     |       |     |          |
+    	 * |        ---------------------          |
+    	 * |                         ^             |
+    	 * |           ^------------->             |
+    	 * |          ---                          |
+    	 * |          | |                          |
+    	 * |          ---                          |
+    	 * -----------------------------------------
+    	 */
        addSequential(new C_AutoByDistance(1.5));
        addSequential(new C_AutoTurn(90));
        addSequential(new C_AutoByTimer(3));
