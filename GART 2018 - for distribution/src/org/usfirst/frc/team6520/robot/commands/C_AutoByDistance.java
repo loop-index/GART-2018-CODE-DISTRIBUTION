@@ -10,7 +10,9 @@ import edu.wpi.first.wpilibj.command.Command;
  */
 public class C_AutoByDistance extends Command { //đi thẳng theo khoảng cách đo được từ cảm biến siêu âm
 
-	double distance; //khoảng cách cần đi
+	//command này đi tới khoảng cách yêu cầu chứ không phải đi thêm một đoạn bằng khoảng cách yêu cầu
+	
+	double distance; //khoảng cách cần đến
 	double error = 0.2; //sai số chấp nhận được, theo mét
 	
 	//giá trị đo của cảm biến, được lọc
